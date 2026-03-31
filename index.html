@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faith & Fabric | Portfolio</title><nav style="background:#1a1a1a; padding:10px; text-align:center;">
+    <a href="#" style="color:rgb(158, 90, 90); margin:10px;">Home</a>
+    <a href="" style="color:rgb(131, 68, 68); margin:10px;">About</a>
+    <a href="#work" style="color:rgb(136, 99, 99); margin:10px;">Work</a>
+    <a href="contactBox" style="color:rgb(77, 80, 122); margin:10px;">Contact</a>
+</nav>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            color: #1a1a1a;
+        }
+
+        header {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            color: #c2a36b;
+            font-size: 42px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            animation: fadeUp 1s ease;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        /* ABOUT */
+        .about {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        /* PROJECT */
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* INSTAGRAM */
+        .insta-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .insta-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .insta-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        /* BUTTON */
+        .btn {
+            background: #c2a36b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a88d5c;
+            transform: scale(1.05);
+        }
+
+        /* CONTACT BOX (hidden initially) */
+        #contactBox {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            animation: fadeUp 1s ease;
+        }
+
+        a {
+            color: #c2a36b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+        <h1>Faith & Fabric</h1>
+        <p>Wear Your Values — Building Style with Purpose</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
+
+        <div class="about">
+            <img src="WhatsApp Image 2026-03-30 at 11.52.17 AM.jpeg">
+
+            <div class="about-text">
+              <p>
+                 Hi, I'm <strong>M. Mohamed Ismail</strong>, a 12th-grade student passionate about web development, design, and building my own brand.
+                 I enjoy creating modern websites and designing social media content that is clean, simple, and meaningful.
+            </p>
+
+            <p>
+              I started <strong>Faith & Fabric</strong> as my first personal brand to explore creativity and business together.
+              Through this journey, I’m learning how to turn ideas into real digital experiences—from websites to visual branding.
+            </p>
+
+            <p>
+              My goal is to build a strong portfolio, improve my skills consistently, and grow into a professional web developer and designer in the future.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section>
+        <h2>My Work</h2>
+
+        <div class="project">
+            <img src="WhatsApp Image 2026-03-30 at 2.18.54 PM (1).jpeg">
+            <p>
+                Promotional design created for my hoodie brand using modern layout and visuals.
+            </p>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section>
+        <h2>My Instagram Work</h2>
+
+        <div class="insta-container">
+
+            <div class="insta-card">
+                <h3>Product Reel</h3>
+                <p>Watch my latest promotional reel.</p>
+                <a href="https://www.instagram.com/reel/DTqJD7Pk8kb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                    <button class="btn">▶ Watch Reel</button>
+                </a>
+            </div>
+
+            <div class="insta-card">
+                <h3>Instagram Page</h3>
+                <p>Explore my designs and posts.</p>
+                <a href="https://www.instagram.com/faith_fabric.6/" target="_blank">
+                    <button class="btn">📱 Visit Profile</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Contact Me</h2>
+
+        <button class="btn" onclick="showContact()">Show Contact</button>
+
+        <div id="contactBox">
+            <p>Email: <a href="mailto:connectismailmd@gmail.com">connectismailmd@gmail.com</a></p>
+
+            <p>Instagram: 
+                <a href="https://www.instagram.com/faith_fabric.6/"></a>
+
+                    @isma4il.jr
+                
+            </p>
+
+            <p>LinkedIn: 
+                <a href="https://www.linkedin.com/in/ismail-Official" target="_blank">
+                    View Profile
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+        function showContact() {
+            document.getElementById("contactBox").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
